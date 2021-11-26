@@ -19,13 +19,11 @@ public class ProductService {
 		return (List<Product>) productRepository.getAll();
 	}
 		
-	//vamos a crear otro que se ebcargue de buscar un pro
-	
+	//vamos a crear otro que se cargue de buscar un pro
 	public Optional<Product> getProduct(int productId){
 		return productRepository.getProduct(productId);
 	}
-	
-	
+
 	public Optional<List<Product>> getByCategory(int categoryId){
 		return productRepository.getByCategory(categoryId);
 	}

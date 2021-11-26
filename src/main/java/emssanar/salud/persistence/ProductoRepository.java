@@ -38,8 +38,7 @@ public class ProductoRepository implements ProductRepository {
 	public Optional<List<Product>> getScarseProducts(int quantity){
 		Optional<List<Producto>> productos= productoCrudRepository.findByCantidadStockLessThanAndEstado(quantity, true);
 		return productos.map(prods->mapper.toProducts(prods));
-		
-		
+
 	}
 	
 	//metodo para obtner un producto dado su ID
@@ -61,6 +60,4 @@ public class ProductoRepository implements ProductRepository {
 		productoCrudRepository.deleteById(productId);//utilizando los repositorios de Spring data save,deleteById, findById 
 	}
 
-	
-	
 }

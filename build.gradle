@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 	  // Allow configuration calls for setting up the eclipse annotation processing configuration.
     //id 'net.ltgt.apt-eclipse' version "0.21"
-	id 'net.ltgt.apt-idea'
+	//id 'net.ltgt.apt-idea'
 }
 
 group = 'emssanar'

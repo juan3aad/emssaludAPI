@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Producto {
 	@Id //anotación porque es la calve primaria de la tabla producto y es sencilla
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//anotaci�n para que jaava genere automaticamente
-	@Column(name="id_producto")//Esta anotaci�n se utiliza porque el nombre del atributo que se define es diferente al que se encuentra en la tabla
+	@Column(name="id_producto")//Esta anotación se utiliza porque el nombre del atributo que se define es diferente al que se encuentra en la tabla
 	private Integer idProducto;
 	
 	private String nombre;
