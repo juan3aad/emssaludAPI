@@ -9,12 +9,12 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Entity//es la anotación mas importante ya que indica a java que esta clase mapea una tabla de una base de datos
+@Entity//es la anotaciÃ³n mas importante ya que indica a java que esta clase mapea una tabla de una base de datos
 @Table(name="productos")
 public class Producto {
-	@Id //anotación porque es la calve primaria de la tabla producto y es sencilla
-	@GeneratedValue(strategy = GenerationType.IDENTITY)//anotación para que jaava genere automaticamente
-	@Column(name="id_producto")//Esta anotación se utiliza porque el nombre del atributo que se define es diferente al que se encuentra en la tabla
+	@Id //anotaciÃ³n porque es la calve primaria de la tabla producto y es sencilla
+	@GeneratedValue(strategy = GenerationType.IDENTITY)//anotaciï¿½n para que jaava genere automaticamente
+	@Column(name="id_producto")//Esta anotaciï¿½n se utiliza porque el nombre del atributo que se define es diferente al que se encuentra en la tabla
 	private Integer idProducto;
 	
 	private String nombre;

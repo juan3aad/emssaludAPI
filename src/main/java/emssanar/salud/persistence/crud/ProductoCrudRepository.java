@@ -14,7 +14,7 @@ public interface ProductoCrudRepository extends CrudRepository<Producto,Integer>
 	@Query(value = "SELECT * FROM productos WHERE id_categoria=?", nativeQuery = true)
 	List<Producto> getByCategoria(int idCategoria);*/
 	
-	/*Acontinuación utilizado QUERU METHODS DE JPA*/
+	/*Acontinuacin utilizado QUERU METHODS DE JPA*/
 	List<Producto>findByIdCategoriaOrderByNombreAsc(int idCategoria);
 	
 	//podemos agregrar operadores opcionales en Query metodos para recuperar los productos escasos y que esten activos debe recibir la cantidad del stctok y el estado

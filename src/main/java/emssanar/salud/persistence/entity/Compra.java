@@ -16,9 +16,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="compras")
 public class Compra {
-
+	/*anotaciÃ³n para que jaava genere automaticamente*/
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)//anotación para que jaava genere automaticamente
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_compra")
 	private Integer idCompra;
 	
