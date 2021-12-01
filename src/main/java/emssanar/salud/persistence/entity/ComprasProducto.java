@@ -15,6 +15,7 @@ public class ComprasProducto {
 	private Boolean estado;
 
 	@ManyToOne
+	@MapsId("idCompra")//Se adiciona esta anotación para que cuando se guarde en cascada comprasproducto pertence cada producto a cada compra
 	@JoinColumn(name = "id_compra", insertable = false, updatable = false)
 	private Compra compra;
 	
