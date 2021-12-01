@@ -10,7 +10,7 @@ public interface PurchaseRepository {
     List<Purchase> getAll();
 
     //metodo para retornar la lista de comp realizadas por un cliente particula
-    Optional<List<Purchase>> getByClient(String ClientId);
+    Optional<List<Purchase>> getByClient(String clientId);
 
     //Metodo para guardar una compra
     Purchase save(Purchase purchase);
