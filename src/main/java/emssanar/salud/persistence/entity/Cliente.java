@@ -13,21 +13,16 @@ import javax.persistence.Table;
 @Table(name="clientes")
 public class Cliente {
 	@Id
-	private Integer id;
-	
+	private String id;
 	private String nombre;
-	
 	@Column(name="apellidos")
 	private String apellido;
-	
-	
 	private Long celular;
-	
 	private String direccion;
-	
+	/*
 	@Column(name="fecha_nacimiento")
 	private LocalDateTime fechaNacimiento;
-	
+	*/
 	@Column(name="correo_electronico")
 	private String correoElectronico;
 	
@@ -35,11 +30,11 @@ public class Cliente {
 	private List<Compra> compras;
 	
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -83,13 +78,7 @@ public class Cliente {
 		this.correoElectronico = correoElectronico;
 	}
 
-	public LocalDateTime getFechaNacimiento() {
-		return fechaNacimiento;
-	}
 
-	public void setFechaNacimiento(LocalDateTime fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
-	}
 
 	public List<Compra> getCompras() {
 		return compras;

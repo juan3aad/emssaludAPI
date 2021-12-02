@@ -10,7 +10,7 @@ import org.mapstruct.Mappings;
 
 import emssanar.salud.persistence.entity.ComprasProducto;
 
-@Mapper(componentModel="Spring", uses = {ProductMapper.class})
+@Mapper(componentModel="spring", uses = {ProductMapper.class})
 public interface PurchaseItemMapper {
     @Mappings({
             @Mapping(source="id.idProducto",target = "productId"),
@@ -27,5 +27,5 @@ public interface PurchaseItemMapper {
             @Mapping(target = "producto", ignore = true),
             @Mapping(target = "id.idCompra", ignore = true)
     })
-    ComprasProducto toComprasProducto(PurchaseItem item);
+    ComprasProducto toComprasProducto(PurchaseItem items);
 }
