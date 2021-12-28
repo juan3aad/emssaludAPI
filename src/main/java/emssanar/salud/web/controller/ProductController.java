@@ -44,7 +44,7 @@ public class ProductController {
 
 	//----------------
 	@GetMapping("/{id}")
-	@ApiOperation("Searc a product with an ID")
+	@ApiOperation("Search a product with an ID")
 	@ApiResponses({
 			@ApiResponse(code=200, message = "OK"),
 			@ApiResponse(code=404, message = "Product not found"),
